@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _Hands_on_02
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char l1, l2, l3;
+
+            Console.WriteLine("Enter the letter1: ");
+            l1 = Convert.ToChar(Console.ReadLine());
+
+
+            Console.WriteLine("Enter the letter2: ");
+            l2 = Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine("Enter the letter3: ");
+            l3 = Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine("{0} {1} {2}", l3, l2, l1);
+            Console.ReadLine();
+
+        }
+    }
+}
