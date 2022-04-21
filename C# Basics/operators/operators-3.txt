@@ -17,4 +17,3 @@ public class Exercise2
  Console.WriteLine("{0} is an odd integer.\n",num1);
 }
 }
-
