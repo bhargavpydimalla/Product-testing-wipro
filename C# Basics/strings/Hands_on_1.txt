@@ -1,0 +1,23 @@
+
+===================================
+1.
+
+using System;
+public class Demo {
+   public static void Main() {
+      string myStr;
+      int i, len, lower_case, upper_case;
+      myStr = "Hello";
+      Console.Write("String: "+myStr);
+      lower_case = 0;
+      upper_case = 0;
+      len = myStr.Length;
+      for(i=0; i<len; i++) {
+         if(myStr[i]>='a' &amp;&amp; myStr[i]<='z') {
+            lower_case++;
+         } else if(myStr[i]>='A' &amp;&amp; myStr[i]<='Z') {
+            upper_case++;
+         }
+      }
+=======================
+  

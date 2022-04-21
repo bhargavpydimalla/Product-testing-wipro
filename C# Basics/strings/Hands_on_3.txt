@@ -1,0 +1,83 @@
+1.
+using System;  
+public class hands_on_3
+{  
+    public static void Main()
+        {
+            string str, str1 = ""; 
+            int i,l;
+			
+			
+	Console.Write("\n\n");
+    Console.Write("Print a string in reverse order:\n");
+    Console.Write("----------------------------------");
+    Console.Write("\n\n");				
+
+            Console.Write("Input  A String : ");
+            str = Console.ReadLine();
+
+            l = str.Length-1;
+            for (i=l;i>=0;i--)
+            {
+
+                str1 = str1 + str[i];
+                
+
+            }
+
+            Console.WriteLine("The string in Reverse  Order Is : {0}", str1);
+            Console.Write("\n");	
+
+        }
+}
+=======================================================================================
+2.
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        
+        string sentence="The dog went that way";
+        Console.WriteLine(sentence.Substring(1));
+        Console.Read();
+    }
+}
+
+========================================================================================
+3.
+using System;
+
+class Geeks {
+
+	public static void Main()
+	{
+
+		String str = "Bhargav";
+
+		Console.WriteLine("OldString : " + str);
+
+		Console.WriteLine("NewString: " + str.Replace('g', 'i'));
+
+		}
+}
+
+==========================================================================================
+4.
+
+using System;
+
+class GFG {
+
+	static public void Main()
+	{
+		string strA = "Bhargav";
+
+		string strB = String.Copy(strA);
+		
+		Console.WriteLine("Original String strA: {0}", strA);
+		Console.WriteLine("Copied String strB: {0}", strB);
+	}
+}
