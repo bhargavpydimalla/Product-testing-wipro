@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace handson_02
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string myStr, rev_str;
+            rev_str = "";
+            Console.WriteLine("Enter a string: ");
+            myStr = Console.ReadLine();
+
+            int len = myStr.Length - 1;
+            while (len >= 0)
+            {
+                rev_str = rev_str + myStr[len];
+                len = len - 1;
+            }
+            if (myStr == rev_str)
+            {
+                Console.WriteLine("Entered string is palindrome: ");
+            }
+            else
+            {
+                Console.WriteLine("Entered string is not palindrome: ");
+            }
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace handson_01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int first_term = 1, second_term = 1, term, i, Total_term;
+            Total_term = 20;
+            Console.WriteLine("Fibonacci series: ");
+            Console.WriteLine(first_term);
+            Console.WriteLine(second_term);
+            for (i = 2; i < Total_term; ++i)
+            {
+                term = first_term + second_term;
+                Console.WriteLine(term + " ");
+                first_term = second_term;
+                second_term = term;
+            }
+            Console.ReadLine();
+        }
+    }
+}

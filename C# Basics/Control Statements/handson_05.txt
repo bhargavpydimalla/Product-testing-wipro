@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace handson_05
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a Number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int factorial;
+            if (num <0)
+            {
+                factorial = 0;
+                Console.Write("Factorial of given number is: " + factorial);
+            }
+            else if (num == 0 || num == 1)
+            {
+                factorial = 1;
+                Console.Write("Factorial of given number is: " + factorial);
+            }
+            else
+            {
+                factorial = 1;
+                while (num > 1)
+                {
+                    factorial *= num;
+                    num -= 1;
+                }
+                Console.Write("Factorial of given number is: " + factorial);
+            }
+            Console.ReadLine();
+        }
+    }
+}
