@@ -1,0 +1,16 @@
+ python avi 10,20,30,40,50,67,45,2,4,6
+  from sys import argv
+   A=[]
+for i in range(1,11):
+     A.append(int(argv[i))
+sum=0
+if j == 2:
+  sum=sum+j
+
+for j in A:   
+   for k in range(2,j):
+       if j%k==0:71
+          break
+   else:
+      sum=sum+j
+print(sum)
