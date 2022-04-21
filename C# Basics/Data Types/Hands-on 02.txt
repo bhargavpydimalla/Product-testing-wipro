@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _Hands_on_02
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int NumberOne, NumberTwo, result;
+            Console.WriteLine("Enter 1st number");
+            NumberOne = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter 2nd number");
+            NumberTwo = Convert.ToInt32(Console.ReadLine());
+
+            result = NumberOne + NumberTwo;
+            Console.WriteLine("Addition of {0} and {1} is = {2}", NumberOne, NumberTwo, result);
+
+            result = NumberOne - NumberTwo;
+            Console.WriteLine("Subtraction of {0} and {1} is = {2}", NumberOne, NumberTwo, result);
+
+            result = NumberOne / NumberTwo;
+            Console.WriteLine("Divison of {0} and {1} is = {2} " ,NumberOne, NumberTwo, result);
+
+            result = NumberOne * NumberTwo;
+            Console.WriteLine("Multiplication of {0} and {1} is = {2} " ,NumberOne, NumberTwo, result);
+
+            result = NumberOne % NumberTwo;
+            Console.WriteLine("{0} Mod {1} is = {2} " ,NumberOne, NumberTwo, result);
+            
+            Console.ReadLine();
+        }
+    }
+}

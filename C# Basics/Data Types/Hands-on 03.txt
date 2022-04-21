@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _Hands_on_03
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter temperature in degree celsius: ");
+            int Celsius = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Temperature in Kelvin = {0}", Celsius + 273.15);
+            Console.WriteLine("Temperature in Fahrenheit = {0}", Celsius * 1.8 + 32);
+
+            Console.ReadLine();
+        }
+    }
+}

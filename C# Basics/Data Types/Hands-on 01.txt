@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _Hands_on_01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Enter Current Date: ");
+            DateTime Today = Convert.ToDateTime(Console.ReadLine());
+
+            int day = Today.Day;
+            Console.WriteLine("Current Day is = {0}", day);
+
+            int month = Today.Month;
+            Console.WriteLine("Current Month is = {0}", month);
+
+            int year = Today.Year;
+            Console.WriteLine("Current Year is = {0}", year);
+
+            string short_date = Today.ToShortDateString();
+            Console.WriteLine("Short Date is = {0}", short_date);
+
+            string long_date = Today.ToLongDateString();
+            Console.WriteLine("Long Date is = {0}", long_date);
+
+            DayOfWeek week_day = DateTime.Today.DayOfWeek;
+            Console.WriteLine("DayOfWeek is = {0}", week_day);
+
+            string yr = Today.DayOfYear.ToString();
+            Console.WriteLine("DayOfYear is = {0}", yr);
+            Console.ReadLine();
+
+
+        }
+    }
+}
