@@ -1,0 +1,26 @@
+a. list all the files including the hidden files along with their properties under the directories /etc & /tmp
+
+--> for /etc :$ ls -a /etc
+--> for /tmp :$ ls -a /tmp
+
+b. display all the avilable Manual Documents related to read
+
+-->$ man read
+
+c. create a new empty file Myfile1 in your home directory
+
+-->$ touch ~/ Myfile1.txt
+
+d. display the statistics of the file Myfile1 using stat command
+
+-->$ stat ~/ Myfile1.txt
+
+e. update all the timestamps of the file Myfiles1 & confirm using stat command
+
+-->$ touch ~/ Myfile1.txt
+-->$ stat ~/ Myfile1.txt
+
+f. only update the access time of the file Myfile1 and confirm using stat command
+
+-->$ touch -a ~/ Myfile1.txt
+-->$ stat ~/ Myfiles.txt

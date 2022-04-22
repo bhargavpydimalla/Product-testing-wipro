@@ -1,0 +1,16 @@
+
+Q6. 
+a. Search for all the .conf files under /etc
+
+--> $ find /etc -type f -name "*.conf"
+
+b. Search for all the .conf files under /etc which are of more than 10 Kb in size
+
+--> $ find /etc -type f -name "*.conf" -size +10k
+
+c. Find all the files in the system bigger than 100kb in size and not accessed in the last 1 year
+
+--> find / -mtime +365 -size +100kb
+
+d. Search for all the files which are bigger than 800 bytes or not accessed in the last week.
+find -size 800b -o -mtime +7

@@ -1,0 +1,11 @@
+Q7. 
+a. Dislay the details of the user root along with the line number from the file.
+
+--> grep -n user /etc/passwd
+
+b. Display the number of users with the login shell of bash
+
+--> cat /etc/passwd | grep -c "/bin/bash"
+
+c. Display all the users whose login shell is not bash 
+--> grep -v '/bin/bash' /etc/passwd | cut -d: -f1

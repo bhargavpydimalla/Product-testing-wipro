@@ -1,0 +1,25 @@
+a. Long List all the java files & c files in the current directory
+
+--> Longlist for java files:$ ls -l *.java
+--> Longlist for C files:$ ls -l *.c
+
+b. Longlist all the c program in the current directoty which starts with app.
+
+-->$ ls -l app*.c
+
+c. Long list all the files c programs which start with app and the 4th &5th letters are either 1 or 2.
+
+-->$ ls -l app@(1|2).c
+
+d. list all the files which starts with app and the letter is not 2.
+
+-->$ ls app* -a !2
+
+e. list all the 7 letter c programs starting with prog
+
+-->$ ls prog*
+
+f. remove all the .c files in the current dirctory.
+
+--> rm *c
+--> ls

@@ -1,0 +1,15 @@
+Q4. 
+# mkdir -p /documents/wipro/hr/medical
+# cat > /documents/wipro/hr/medical/mas
+File to test the hard link
+# ln /documents/wipro/hr/medical/mas mas
+# ls -li /documents/wipro/hr/medical/mas mas
+15466501 -rw-r--r-- 2 root root 27 Mar 24 15:57 /documents/wipro/hr/medical/mas
+# cat mas /document/wipro/hr/medical/hr/medical/mas
+File to test the hard link
+File to test the hard link
+# rm /documents/wipro/hr/medical/mas 
+# ls -li mas 
+15466501 -rw-r--r-- 1 root root 27 Mar 24 15:57 mas
+# cat mas 
+File to test the hard link

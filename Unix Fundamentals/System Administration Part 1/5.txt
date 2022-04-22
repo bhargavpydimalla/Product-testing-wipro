@@ -1,0 +1,19 @@
+Q5.
+# mkdir d1
+# ln -s d1 d1.ln
+# cat > /file1
+To test the soft link - the target file
+# ln -s /file1 /boot/file1.ln
+# ls -l /boot/file1.ln 
+lrwxrwxrwx 1 root root 6 Mar 24 20:06 /boot/file1.ln -> /file1
+# cat /file1 /boot/file1.ln
+To test the soft link - the target file
+To test the soft link - the target file
+# ls -il /file1 /boot/file1.ln
+53477382 lrwxrwxrwx 1 root root  6 Mar 24 20:06 /boot/file1.ln -> /file1
+      19 -rw-r--r-- 1 root root 40 Mar 24 20:04 /file1
+# rm /file1
+# ls -l /boot/file1.ln
+lrwxrwxrwx 1 root root 6 Mar 24 20:06 {/boot/file1.ln} -> {/file1}    # files in the {} are highlighted as red
+# cat /boot/file1.ln
+cat: /boot/file1.ln No such file or directory  

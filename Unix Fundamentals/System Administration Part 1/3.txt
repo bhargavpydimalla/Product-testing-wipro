@@ -1,0 +1,24 @@
+a. change to you home directory and create an empty file called place_2_see in Munnar
+
+--> touch /Munnar/place_2_see.txt
+
+b. copy that file to India
+
+--> cp /Munnar/place_2_see.txt /India/
+
+c. change the name of the file copied on India
+
+--> mv /India/places_2_see.txt /India/very_good_place.txt
+
+d. Go to chennai Directory, list the content of directory called India from there.
+
+--> cd /Chennai/
+--> ls /India/
+
+e. Being at chennai directory, delete the places_2_see file.
+
+--> rm /Munnar/places_2_see
+
+f. remain at chennai, remove banglore dir
+
+--> rmdir /Banglore
