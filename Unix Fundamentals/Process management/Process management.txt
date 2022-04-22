@@ -1,0 +1,36 @@
+1.
+
+sleep command
+
+$ sleep 1000
+
+jobs command
+
+jobs -p
+
+priority command 
+
+ps -l
+=====================
+
+2. jobs 
+
+jobs -l
+====================
+3. jobs for background
+
+   fg 3 for foreground
+
+=====================
+
+4. background
+
+	jobs
+=====================
+5.priority
+
+ps -l  renice
+===================
+6. Kill 
+
+kill -SIGSTOP 4519
