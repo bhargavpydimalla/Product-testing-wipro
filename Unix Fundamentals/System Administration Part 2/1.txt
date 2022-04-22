@@ -1,0 +1,23 @@
+a. Display the 1st line of the file /etc/passwd
+
+--> head -n 1 /etc/passwd
+
+b. Display the lines from the 5th to 8th from /etc/passwd
+
+--> cat /etc/passwd | head -n 8 | tail -n 4
+
+c. Display the 2nd line of the file /etc/passwd
+
+--> cat /etc/passwd | head -n 2 | tail -n 1
+
+d. Display the penultimate line of the file /etc/passwd
+
+--> cat /etc/passwd | tail -n 1 | head -n 1
+
+e. Display the output of ls -l command where the columns are separated by |
+
+--> ls -l | tr [:space:] '|'
+
+f. Display the names & the terminal names of all the online users in the ascending order of the terminal names.
+
+--> who -a | sort
