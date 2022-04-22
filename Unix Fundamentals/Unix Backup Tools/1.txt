@@ -1,0 +1,17 @@
+1.Create a compressed archive of the UserData directory into UserData.tar.gz.
+tar -zxvf tar-archive-name.tar.gz
+2.Display the content of the compressed archive file.
+Using Vim Editor
+$ vim ostechnix.tar.gz
+Using Tar command
+$ tar -tf ostechnix.tar
+ostechnix/
+ostechnix/image.jpg
+ostechnix/file.pdf
+ostechnix/song.mp3
+Using Rar command
+$ tar -tvf ostechnix.tar
+drwxr-xr-x sk/users 0 2018-07-02 19:30 ostechnix/
+-rw-r--r-- sk/users 53632 2018-06-29 15:57 ostechnix/image.jpg
+-rw-r--r-- sk/users 156831 2018-06-04 12:37 ostechnix/file.pdf
+-rw-r--r-- sk/users 9702219 2018-04-25 20:35 ostechnix/song.mp3

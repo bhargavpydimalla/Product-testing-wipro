@@ -1,0 +1,30 @@
+1. copy file into current directory as password
+
+$ realpath --relative-to=. /etc/passwd
+../../etc/passwd
+
+2. long list passwd and observe size
+
+ls -l /etc/passwd
+
+3.compress
+
+tar -cvf passwd
+
+4. access zip
+
+cat command
+
+5.decompress
+
+tas -cvf
+
+6. compress using gzip
+gzip passwd
+
+7.unzip
+
+gzip -d passwd.gz
+
+8.
+zip UserData.zip

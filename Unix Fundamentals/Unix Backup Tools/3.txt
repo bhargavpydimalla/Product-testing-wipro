@@ -1,0 +1,5 @@
+3.Restore the backup from the compressed tar archive.
+Change to the directory where you want to put the files.
+Insert the tape into the tape drive.
+Retrieve files from the tape using the tar command. $ tar xvf /dev/rmt/ n [ filename ...] x. ...
+Verify the files are copied by listing the contents of the current directory. $ ls -l.
