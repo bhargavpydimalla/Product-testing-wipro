@@ -1,0 +1,9 @@
+
+1. rwx r-x r--
+You can leave out the parts that you do not want to change
+ chmod u=rwx,g=rx,o=rx filename
+will set the user's permissions and leave the others as they are.
+ chmod u=rwx filename
+will remove the group's x permission, and
+chmod o+w filename
+

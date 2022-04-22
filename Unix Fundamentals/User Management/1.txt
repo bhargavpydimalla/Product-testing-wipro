@@ -1,0 +1,23 @@
+1.Create a new empty file Filel in the current directory
+The touch command allows us to update the timestamps on existing files and directories as well as creating new, empty files.
+
+2.List the permissions of the file Filel
+Read permission – If authorized, the user can read the contents of the file.
+Write permission – If authorized, the user can modify the file.
+Execute permission – If authorized, the user can execute the file as a program.
+
+3.Remove the read permission from the group for Filel & confirm
+To remove world read permission from a file you would type chmod o-r [filename].
+
+4.Add execute privilege to all the users for Filel & confirm.
+chmod ugo+rwx foldername
+
+5.Assuming that you don't know the current privileges of the file, set the
+
+permissions of Filel as rw-rw- r
+
+f.
+  Only user has read and write permissions ,the group and others can read only
+
+6. Remove rw privilege from group & r from others
+In the example -rw-r--r-- , group members can only read the file. ... to remove read and write permission for group and other users.

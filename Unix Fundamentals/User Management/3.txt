@@ -1,0 +1,17 @@
+Write down the umask values for the below scenarios: 
+
+i. The owner should have read & write privileges, group only read & other's nothing.
+077
+2.The owner should have read & write, whereas group and others should not have write
+The default creation permissions are 666 for files, which gives read and write permission to user, group, and others, and to 777 for directories, which means read, write and execute permission to user, group, and others
+
+3.The owner should have read & write group & others only read
+022
+
+
+
+4.For the below umasks what will be the default permissions? umask Files Directories
+077 If you enter umask 077 in the terminal it will only hold good for that session of the terminal;
+
+700 This will display default umask 0002
+
