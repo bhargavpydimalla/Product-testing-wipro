@@ -1,0 +1,17 @@
+1. create new file using vi editor
+vi myFileName
+
+Enter the given data into vi editor
+
+2. correct the errors 
+
+3. replace calcutta to kolkata
+
+:%s/calcutta/kolkata/g
+
+4. to search word
+
+Press ESC
+Type “/”
+Type the Rajat
+Press Enter or Return key perform search
