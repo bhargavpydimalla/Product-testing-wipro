@@ -1,0 +1,33 @@
+$odd =1..20
+foreach($p in $odd) { if($p %2 -eq 1) { "$p is odd "} }
+Output:
+1 is odd
+3 is odd
+5 is odd
+7 is odd
+9 is odd
+11 is odd
+13 is odd
+15 is odd
+17 is odd
+19 is odd
+
+
+2. 
+for($i=5; $i -le 15;$i++) { $flag=0; for($j=2;$j-lt $i ;$j++)  { if ($i%$j -eq 0 ) {$flag++} } if ($flag -eq 0) { "$i is prime number" } Else {"$i is not prime number"} }
+output:
+5 is prime number
+6 is not prime number
+7 is prime number
+8 is not prime number
+9 is not prime number
+10 is not prime number
+11 is prime number
+12 is not prime number
+13 is prime number
+14 is not prime number
+15 is not prime number
+
+
+
+
