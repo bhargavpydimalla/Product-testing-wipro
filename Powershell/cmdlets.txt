@@ -1,0 +1,27 @@
+
+5.Store the help of all the Set cmdlets in a file -Help.txt
+
+get-help | Out-File -FilePath .\Desktop\Help.txt
+storing the output of get-help cmdlet in text file called Help.txt.
+
+
+
+6.Command to find out services which are in running status and starts with letter "S" is:
+	Get-Service | Where-Object {$_.Status -EQ "Running"}
+
+
+
+
+7. Display date in 12 hours format and 24 hour format
+12hrs
+cmdlet : PS C:\Users\prabu>  Get-Date -Format "hh:mm"
+08:09
+cmdlet : Get-Date -Format "HH:mm"
+
+PS C:\Users\prabu> Get-Date -Format "HH:mm"
+>>
+08:09
+
+PS C:\Users\prabu> Get-Date -Format "hh:mm "
+08:10
+
