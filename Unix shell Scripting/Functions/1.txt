@@ -1,0 +1,20 @@
+#!/bin/sh
+
+
+Function1 () {
+   read -p "Please Enter Path:" -r r1
+   parent=$(dirname "$r1")
+}
+
+Function2() {
+    timestamp=date +%m_%d_%y
+    sudo tar -cvpzf /backup-$timestamp.tar.gz /store
+}
+
+Function3(){
+    sudo tar -cvpzf /home/temp.tar.gz /store
+}
+
+Function1
+Function2
+Function3
